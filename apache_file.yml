@@ -1,0 +1,7 @@
+---
+name: creating repo for installing httpd on hosts using ansible
+hosts: vm_group
+sudo: become
+tasks:
+	name: install apache in amazon linux servers
+	yum: name=httpd state=present
